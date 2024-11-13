@@ -47,6 +47,42 @@ module.exports = {
             filename: 'index.html'
 
         }),
+        
+        new HtmlWebpackPlugin({
+
+            template: './src/todo.html',
+
+            inject: true,
+
+            chunks: ['index'],
+
+            filename: 'todo.html'
+
+        }),
+
+        new HtmlWebpackPlugin({
+
+            template: './src/info.html',
+
+            inject: true,
+
+            chunks: ['index'],
+
+            filename: 'info.html'
+
+        }),
+
+        new HtmlWebpackPlugin({
+
+            template: './src/projects.html',
+
+            inject: true,
+
+            chunks: ['index'],
+
+            filename: 'projects.html'
+
+        }),
 
     ],
 
