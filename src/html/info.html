@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О приложении</title>
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/img/favicon-16x16.png"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__navigation">
+        <img
+          src="../assets/img/logo.svg"
+          alt="psuti_logo"
+          width="180"
+          height="72"
+        />
+        <div class="burger" id="burger">
+          <img src="../assets/img/menu.svg" class="icon menu" />
+          <img
+            src="../assets/img/close-menu.svg"
+            class="icon close-menu"
+            style="display: none"
+          />
+        </div>
+        <ul id="navigation" class="header__navigation-list">
+          <li class="header__navigation-list-item">
+            <a href="./index.html">Главная</a>
+          </li>
+          <li class="header__navigation-list-item">
+            <a href="./projects.html">Проекты</a>
+          </li>
+          <li class="header__navigation-list-item">
+            <a href="./todo/index.html">Список задач</a>
+          </li>
+          <li class="header__navigation-list-item">
+            <a
+              href="./info.html"
+              class="active"
+              onclick="event.preventDefault()"
+              >О приложении</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>О приложении</main>
+
+    <script src="../js/burder.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/img/favicon-16x16.png"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__navigation">
+        <img
+          src="../assets/img/logo.svg"
+          alt="psuti_logo"
+          width="180"
+          height="72"
+        />
+        <div class="burger" id="burger">
+          <img src="../assets/img/menu.svg" class="icon menu" />
+          <img
+            src="../assets/img/close-menu.svg"
+            class="icon close-menu"
+            style="display: none"
+          />
+        </div>
+        <ul id="navigation" class="header__navigation-list">
+          <li class="header__navigation-list-item">
+            <a
+              href="./index.html"
+              class="active"
+              onclick="event.preventDefault()"
+              >Главная</a
+            >
+          </li>
+          <li class="header__navigation-list-item">
+            <a href="./projects.html">Проекты</a>
+          </li>
+          <li class="header__navigation-list-item">
+            <a href="./todo/index.html">Список задач</a>
+          </li>
+          <li class="header__navigation-list-item">
+            <a href="./info.html">О приложении</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <aside class="main__side">
+        <h1 class="main__side-title">PaaSD</h1>
+        <p class="main__side-descs">
+          Помощник в ваших
+          <span class="main__side-descs-line">повседневных</span> задачах и
+          <span class="main__side-descs-line">типовых</span> решениях
+        </p>
+      </aside>
+
+      <img src="../assets/img/todoPana.svg" class="main__image" alt="" />
+    </main>
+
+    <script src="../js/burder.js"></script>
+  </body>
+</html>
